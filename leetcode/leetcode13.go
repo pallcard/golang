@@ -5,12 +5,12 @@ package main
 // CD CM
 func romanToInt(s string) int {
 	sum := 0
-	ixcMap := map[int32][]uint8{
-		'I': {'X', 'V', 1},
-		'X': {'L', 'C', 10},
-		'C': {'D', 'M', 100},
+	ixcMap := map[int32][]uint8{ //ixc特殊情况
+		'I': {'X', 'V'},
+		'X': {'L', 'C'},
+		'C': {'D', 'M'},
 	}
-	romanMap := map[int32]int{
+	romanMap := map[int32]int{ //roman对应值大小
 		'I': 1,
 		'V': 5,
 		'X': 10,
